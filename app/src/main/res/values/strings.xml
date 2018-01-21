@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Quiz app</string>
+
+
+    <string name="user_name">Enter name</string>
+
+    <string name="_1_who_invented_olimpic_games">1. Who invented Olimpic Games ?</string>
+    <string name="romans">Romans</string>
+    <string name="persians">Persians</string>
+    <string name="greeks">Greeks</string>
+    <string name="incas">Incas</string>
+
+
+    <string name="_2_which_of_the_following_disciplines_are_included_in_OG">2. Which of the following disciplines are included in OG ?</string>
+    <string name="poker">Poker</string>
+    <string name="basketball">Basketball</string>
+    <string name="athletics">Athletics</string>
+    <string name="domino">Domino</string>
+
+
+    <string name="_3_what_metal_are_medals_made_of">3. What metal are medals made of ?</string>
+    <string name="gold">Gold</string>
+    <string name="yvory">Yvory</string>
+    <string name="silver">Silver</string>
+    <string name="iron">Iron</string>
+
+
+    <string name="_4_which_city_celebrated_olimpic_games_in_2016">4. Which city celebrated Olympic Games in 2016?</string>
+    <string name="london">London</string>
+    <string name="paris">Paris</string>
+    <string name="oslo">Oslo</string>
+    <string name="rio_de_janeiro">Rio de Janeiro</string>
+
+
+    <string name="_5_where_is_the_olimpic_flame_kindled">5. Where is the Olimpic flame kindled ?</string>
+
+    <string name="_6_surname_of_american_swimmer_who_won_a_record_number_of_gold_medals">6. Surname of american swimmmer who won a record number of gold medals?</string>
+
+
+    <string name="submit_answer">submit answer</string>
+
+    <string name="reset">Reset</string>
+
+    <string name="thanks">Thank you for your answers</string>
+
+
+    <string name="missinganwserQ1">Missing answer in question 1</string>
+    <string name="missinganwserQ2">Missing answer in question 2</string>
+    <string name="missinganwserQ3">Missing answer in question 3</string>
+    <string name="missinganwserQ4">Missing answer in question 4</string>
+    <string name="missinganwserQ5">Missing answer in question 5</string>
+    <string name="missinganwserQ6">Missing answer in question 6</string>
+
+
+    <string name="Olimpia">Olimpia</string>
+
+    <string name="Phelps">Phelps</string>
+
+    <string name="Q1isCorrect">Question 1 is correct</string>
+    <string name="Q2isCorrect">Question 2 is correct</string>
+    <string name="Q3isCorrect">Question 3 is correct</string>
+    <string name="Q4isCorrect">Question 4 is correct</string>
+    <string name="Q5isCorrect">Question 5 is correct</string>
+    <string name="Q6isCorrect">Question 6 is correct</string>
+
+    <string name="Q1isWrong">Question 1 is wrong</string>
+    <string name="Q2isWrong">Question 2 is wrong</string>
+    <string name="Q3isWrong">Question 3 is wrong</string>
+    <string name="Q4isWrong">Question 4 is wrong</string>
+    <string name="Q5isWrong">Question 5 is wrong</string>
+    <string name="Q6isWrong">Question 6 is wrong</string>
+
+    <string name="score">Score:</string>
+
+</resources>
