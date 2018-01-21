@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/medalla">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--User name -->
+
+        <EditText
+            android:id="@+id/enter_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_name"
+            android:inputType="textCapWords" />
+
+        <!--Question 1 -->
+
+        <TextView
+            android:id="@+id/textViewQ1"
+            android:text="@string/_1_who_invented_olimpic_games"
+            style="@style/Question"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/marginBottom24"
+            android:layout_marginTop="@dimen/marginTop24">
+            <RadioButton
+                android:id="@+id/radio1a"
+                style="@style/Answer"
+                android:onClick="onRadioButtonClickedQ1"
+                android:text="@string/romans"/>
+            <RadioButton
+                android:id="@+id/radio1b"
+                style="@style/Answer"
+                android:onClick="onRadioButtonClickedQ1"
+                android:text="@string/persians" />
+            <RadioButton
+                android:id="@+id/radio1c"
+                style="@style/Answer"
+                android:onClick="onRadioButtonClickedQ1"
+                android:text="@string/greeks" />
+            <RadioButton
+                android:id="@+id/radio1d"
+                style="@style/Answer"
+                android:onClick="onRadioButtonClickedQ1"
+                android:text="@string/incas" />
+        </RadioGroup>
+
+
+        <!--Question 2 -->
+
+        <TextView
+            android:id="@+id/textViewQ2"
+            android:text="@string/_2_which_of_the_following_disciplines_are_included_in_OG"
+            style="@style/Question" />
+
+        <CheckBox
+            android:id="@+id/checkbox2a"
+            android:text="@string/poker"
+            android:layout_marginTop="@dimen/marginTop24"
+            style="@style/Answer"/>
+        <CheckBox
+            android:id="@+id/checkbox2b"
+            android:text="@string/basketball"
+            style="@style/Answer" />
+        <CheckBox
+            android:id="@+id/checkbox2c"
+            android:text="@string/athletics"
+            style="@style/Answer"/>
+        <CheckBox
+            android:id="@+id/checkbox2d"
+            android:text="@string/domino"
+            style="@style/Answer"/>
+
+        <!--Question 3 -->
+
+        <TextView
+            android:id="@+id/textViewQ3"
+            android:text="@string/_3_what_metal_are_medals_made_of"
+            style="@style/Question" />
+
+        <CheckBox
+            android:id="@+id/checkbox3a"
+            android:text="@string/gold"
+            android:layout_marginTop="@dimen/marginTop24"
+            style="@style/Answer"/>
+        <CheckBox
+            android:id="@+id/checkbox3b"
+            android:text="@string/yvory"
+            style="@style/Answer" />
+        <CheckBox
+            android:id="@+id/checkbox3c"
+            android:text="@string/silver"
+            style="@style/Answer"/>
+        <CheckBox
+            android:id="@+id/checkbox3d"
+            android:text="@string/iron"
+            style="@style/Answer"/>
+
+
+        <!--Question 4 -->
+
+        <TextView
+            android:id="@+id/textViewQ4"
+            android:text="@string/_4_which_city_celebrated_olimpic_games_in_2016"
+            style="@style/Question" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/marginBottom24"
+            android:layout_marginTop="@dimen/marginTop24">
+            <RadioButton
+                android:id="@+id/radio4a"
+                android:onClick="onRadioButtonClickedQ2"
+                android:text="@string/paris"
+                style="@style/Answer"/>
+            <RadioButton
+                android:id="@+id/radio4b"
+                android:onClick="onRadioButtonClickedQ2"
+                android:text="@string/london"
+                style="@style/Answer" />
+            <RadioButton
+                android:id="@+id/radio4c"
+                android:onClick="onRadioButtonClickedQ2"
+                android:text="@string/oslo"
+                style="@style/Answer" />
+            <RadioButton
+                android:id="@+id/radio4d"
+                android:onClick="onRadioButtonClickedQ2"
+                android:text="@string/rio_de_janeiro"
+                style="@style/Answer" />
+        </RadioGroup>
+
+        <!--Question 5 -->
+
+        <TextView
+            android:id="@+id/textViewQ5"
+            android:text="@string/_5_where_is_the_olimpic_flame_kindled"
+            style="@style/Question"/>
+
+        <EditText
+            android:id="@+id/edittext1"
+            style="@style/AnswerEdit" />
+
+
+        <!--Question 6 -->
+
+        <TextView
+            android:id="@+id/textViewQ6"
+            android:text="@string/_6_surname_of_american_swimmer_who_won_a_record_number_of_gold_medals"
+            style="@style/Question"/>
+
+        <EditText
+            android:id="@+id/edittext2"
+            style="@style/AnswerEdit" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--Submit Button -->
+            <Button
+                android:id="@+id/btnDisplay"
+                android:layout_width="wrap_content"
+                android:onClick="onSubmit"
+                android:text="@string/submit_answer"
+                style="@style/Button" />
+
+            <!--Reset Button -->
+            <Button
+                android:id="@+id/buttonrReset"
+                android:layout_width="match_parent"
+                android:onClick="onClear"
+                android:text="@string/reset"
+                style="@style/Button" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
