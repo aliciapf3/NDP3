@@ -13,6 +13,16 @@ import java.lang.reflect.Method;
 
 public class MainActivity extends AppCompatActivity {
 
+    /**
+     * Save the score in case of changing activity (landscape)
+     */
+
+    static final String STATE_SCORE="score";
+
+    /**
+     * declaring variables
+     */
+
     int score = 0;
 
     private RadioGroup radio1Group;
@@ -38,6 +48,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /**
+     * Avoid that score & stats reset to 0 when rotating the phone
+     */
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        savedInstanceState.putInt(STATE_SCORE,score);
+        super.onSaveInstanceState(savedInstanceState);
+    }
+
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        score = savedInstanceState.getInt(STATE_SCORE);
+        super.onRestoreInstanceState(savedInstanceState);
+
+    }
 
     /**
      * display toast in Question 1
@@ -113,6 +138,7 @@ public class MainActivity extends AppCompatActivity {
 
         enterName = findViewById(R.id.enter_name);
         enterName.setText("");
+        
 
         radio1Group = findViewById(R.id.radioGroup1);
         radio1Group.clearCheck();
